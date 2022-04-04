@@ -10,3 +10,21 @@ fetch(Req)
             //     frameborder="0"></iframe>`;
         }
     });
+
+
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+    document.getElementById("header").style.backgroundColor = "rgba(0,0,0,0.1)";
+  } else {
+    document.getElementById("header").style.backgroundColor = "transparent";
+  }
+}
+
+let nav = document.querySelector(".nav");
+let navigation = document.querySelector(".navigation");
+nav.onclick = function() {
+    nav.classList.toggle("active");
+    navigation.classList.toggle("active");
+}

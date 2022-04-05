@@ -36,6 +36,9 @@ html {
 .header .logo {
     max-width: 80px;
 }
+.header .nav {
+    display: none;
+}
 .header .navigation {
     display: flex;
 }
